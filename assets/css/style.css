@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #ecf8fb;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Comic Neue", cursive;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar .navbar-brand {
+  color: #ecf8fb;
+  font-family: "Comic Neue", cursive;
+}
+
+.navbar .nav-item a {
+  color: #ecf8fb;
+  font-family: "Comic Neue", cursive;
+  text-align: center;
+}
+
+.navbar .logo {
+  display: inline-block;
+  width: 35px;
+}
+
+.footer {
+  background-color: #343a40;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer p {
+  padding: 10px;
+  margin-bottom: 0;
+  color: #ecf8fb;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.app-container {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.app-head-container {
+  background-color: #c6e6eb;
+  height: 120px;
+  text-align: center;
+}
+
+.app-head-container img {
+  height: 100%;
+}
+
+.app-body-container {
+  background-color: #ecf8fb;
+  min-height: 500px;
+  text-align: center;
+  padding: 20px;
+}
+
+.app-body-container .body-heading {
+  margin-bottom: 35px;
+  font-size: 3rem;
+}
+
+.button-container {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.icons {
+  font-size: 1.8rem;
+  color: #2c707c;
+}
+
+.toggler-icon {
+  color: #0094d6;
+}
+
+.reg-link {
+  color: #0094d6;
+}
+
+.sub-title {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#displayContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#displayContainer .wrapper {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+#displayContainer .wrapper .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+}
+
+#displayContainer .wrapper p {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+#displayContainer2 {
+  display: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#displayContainer2 p {
+  margin-bottom: 40px;
+  font-family: 'Comic Neue', cursive;
+  font-weight: 500;
+}
+
+#displayContainer2 .register-container {
+  border-right: 1px solid black;
+  width: 50%;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+#displayContainer2 .guest-container {
+  width: 50%;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+.register-form, .login-form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.form-control {
+  margin: 0 auto;
+}
+
+.question-form {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.question-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.question-container h4 {
+  margin-bottom: 20px;
+}
+
+#question2-1, #question2-2, #question3, #pui, #pum, #not {
+  display: none;
+}
+
+#getresults {
+  display: none;
+  margin: 0 auto;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+.form-check input[type=radio] {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.form-check label {
+  margin-left: 5px;
+  font-size: 1.2rem;
+}
+
+.wrapper-results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.wrapper-results h4 {
+  text-align: right;
+  color: #0b4372;
+  width: 50%;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+
+.wrapper-results p {
+  text-align: left;
+  width: 50%;
+  margin-bottom: 0;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.delete-container {
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .app-container {
+    margin-bottom: 120px;
+  }
+  .app-body-container .body-heading {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  .app-body-container .sub-title {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .app-body-container .wrapper {
+    margin-bottom: 10px;
+  }
+  .nav-link {
+    border-bottom: 1px solid #ecf8fb;
+  }
+  #displayContainer {
+    margin-bottom: 50px;
+  }
+  #displayContainer .wrapper {
+    width: 100%;
+  }
+  #displayContainer2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #displayContainer2 p {
+    margin-bottom: 20px;
+  }
+  #displayContainer2 .register-container {
+    width: 100%;
+    border: none;
+    font-size: 1.3rem;
+  }
+  #displayContainer2 .guest-container {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .wrapper-results {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .wrapper-results h4 {
+    text-align: center;
+    width: 100%;
+  }
+  .wrapper-results p {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+  .delete-container {
+    position: static;
+  }
+  .delete {
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .app-container {
+    margin-bottom: 100px;
+  }
+  .delete-container {
+    position: static;
+  }
+  .delete {
+    position: static;
+  }
+}
+/*# sourceMappingURL=style.css.map */

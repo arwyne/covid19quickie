@@ -1,0 +1,352 @@
+// $navBgColor: #485663;
+$navBgColor: #343a40;
+// $headBgColor: #90a0b0;
+$headBgColor: #c6e6eb;
+$bodyBgColor: #ecf8fb;
+
+$navTextColor: #ecf8fb;
+
+$headingText: 'Comic Neue', cursive;
+$navText: 'Comic Neue', cursive;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+// main styling
+body {
+    background-color: $bodyBgColor;
+    min-height: 100vh;
+    position: relative; //for footer
+}
+
+h1, h2, h3, h4 {
+   font-family: $headingText;
+}
+
+.navbar {
+    background-color: $navBgColor;
+
+    .navbar-brand {
+        color: $navTextColor;
+        font-family: $navText;
+    }
+
+    .nav-item a {
+        color: $navTextColor;
+        font-family: $navText;
+        text-align: center;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 35px;
+    }
+}
+
+.footer {
+    background-color: $navBgColor;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    p {
+        padding: 10px;
+        margin-bottom: 0;
+        color: $navTextColor;
+    }
+}
+
+.container {
+    max-width: 900px;
+}
+
+.app-container {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.app-head-container {
+    background-color: $headBgColor;
+    height: 120px;
+    text-align: center;
+
+    img {
+        height: 100%;
+    }
+}
+
+.app-body-container {
+    background-color: $bodyBgColor;
+    min-height: 500px;
+    text-align: center;
+    padding: 20px;
+
+    .body-heading {
+        margin-bottom: 35px;
+        font-size: 3rem;
+    }
+}
+
+.button-container {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.icons {
+    font-size: 1.8rem;
+    color: #2c707c;
+}
+
+.toggler-icon {
+    color: #0094d6;
+}
+
+.reg-link {
+    color: #0094d6;
+}
+    
+// home page
+.sub-title {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+#displayContainer {
+    width: 90%;
+    margin: 0 auto;
+
+    .wrapper {
+        width: 70%;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 25px;
+
+        .icons-container {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+#displayContainer2 {
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    p {
+        margin-bottom: 40px;
+        font-family: 'Comic Neue', cursive;
+        font-weight: 500;
+    }
+    
+    .register-container {
+        border-right: 1px solid black;
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    .guest-container {
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+}
+
+
+// register page
+.register-form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-control {
+    margin: 0 auto;
+}
+
+// login page
+.login-form {
+    @extend .register-form;
+}
+
+
+// question page
+.question-form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.question-container {
+    width: 80%;
+    margin: 0 auto;
+
+    h4 {
+        margin-bottom: 20px;
+    }
+}
+
+#question2-1, #question2-2, #question3, #pui, #pum, #not {
+    display: none;
+}
+
+#getresults {
+    display: none;
+    margin: 0 auto;
+}
+
+.form-check {
+    margin-bottom: 10px;
+    input[type=radio] {
+        transform: scale(1.8);
+    }
+
+    label {
+        margin-left: 5px;
+        font-size: 1.2rem;
+    }
+}
+
+
+// results page or profile page
+.wrapper-results {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    h4 {
+        text-align: right;
+        color: #0b4372;
+        width: 50%;
+        margin-bottom: 0;
+        font-size: 1.6rem;
+    }
+
+    p {
+        text-align: left;
+        width:50%;
+        margin-bottom: 0;
+        padding-left: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+.delete-container {
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 400px) {
+    .app-container {
+        margin-bottom: 120px;
+    }
+    .app-body-container {
+        .body-heading {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+        }
+        .sub-title {
+            width: 100%;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .wrapper {
+            margin-bottom: 10px;
+        }
+    }
+
+    .nav-link {
+        border-bottom: 1px solid #ecf8fb;
+    }
+
+    // home page
+    #displayContainer {
+        margin-bottom: 50px;
+
+        .wrapper {
+            width: 100%;
+        }
+    }
+
+    #displayContainer2 {
+        flex-direction: column;
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .register-container {
+            width: 100%;
+            border: none;
+            font-size: 1.3rem;
+        }
+
+        .guest-container {
+            width: 100%;
+            font-size: 1.3rem;
+        }
+    }
+
+    // results page
+    .wrapper-results {
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        h4 {
+            text-align: center;
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    .delete-container {
+        position: static;
+    }
+    
+    .delete {
+        position: static;
+    }
+
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .app-container {
+        margin-bottom: 100px;
+    }
+
+    .delete-container {
+        position: static;
+    }
+    
+    .delete {
+        position: static;
+    }
+}

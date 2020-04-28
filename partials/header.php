@@ -48,27 +48,31 @@
             <div class="collapse navbar-collapse" id="navCollapse">
                 <ul class="navbar-nav ml-auto">
                     <?php if (isset($_SESSION['user'])): ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./profile.php">Profile</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./profile.php">Profile</a>
+                        </li>
+
                         <?php if ($_SESSION['user']['role_id'] == 1): ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="./admin.php">Admin</a>
                             </li>
+
                         <?php endif ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="../controllers/logout.php">Logout</a>
                             </li>
-                        
-
+                            
                     <?php else: ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./register.php">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./login.php">Login</a>
-                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./register.php">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.php">Login</a>
+                        </li>
                     <?php endif ?>                     
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faqs.php">Faqs</a>
+                        </li>
                 </ul>
             </div>
         </nav>

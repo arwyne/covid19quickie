@@ -58,7 +58,7 @@ h1, h2, h3, h4 {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 100px;
-  border: 1px solid black;
+  border: 2px solid #343a40;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -151,7 +151,7 @@ h1, h2, h3, h4 {
 }
 
 #displayContainer2 .register-container {
-  border-right: 1px solid black;
+  border-right: 1px solid #343a40;
   width: 50%;
   font-size: 1.5rem;
   padding: 15px;
@@ -245,9 +245,47 @@ h1, h2, h3, h4 {
   bottom: 0;
 }
 
+.accordion {
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #ecf8fb;
+}
+
+.card-body {
+  text-align: left;
+  background-color: #ecf8fb;
+}
+
+.btn-link {
+  color: #0b4372;
+}
+
+.emergencyhotline {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.emergencyhotline h3 {
+  margin-bottom: 20px;
+}
+
+.emergencyhotline p {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.emergencyhotline .hotline {
+  color: #0b4372;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 400px) {
   .app-container {
     margin-bottom: 120px;
+    border-left: none;
+    border-right: none;
   }
   .app-body-container .body-heading {
     font-size: 2.5rem;
@@ -315,6 +353,8 @@ h1, h2, h3, h4 {
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   .app-container {
     margin-bottom: 100px;
+    border-left: none;
+    border-right: none;
   }
   .delete-container {
     position: static;
